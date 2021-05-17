@@ -1,0 +1,447 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Pacifico&subset=cyrillic,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic,hebrew,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700&subset=cyrillic,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script&subset=cyrillic,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Pangolin&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+
+body {
+    /*color: dimgray;*/
+}
+
+@font-face {
+    font-family: 'Pacifico', cursive;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Caveat', cursive;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Neucha', cursive;
+    font-family: 'Bad Script', cursive;
+    font-family: 'Pangolin', cursive;
+    /*font-family: 'Indie Flower', cursive;
+    ;
+    ;
+    */
+}
+
+.header-h2 {
+    margin: 0;
+}
+
+div > p {
+    margin: 0;
+    color: darkblue;
+    margin-left: 1%;
+}
+
+p > a {
+    font-weight: 700;
+    /*text-decoration: none;*/
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: forestgreen;
+}
+
+a:hover {
+    color: lightseagreen;
+}
+
+a:active {
+    color: lawngreen;
+}
+
+.task-description {
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 50%;
+    font-style: italic;
+}
+
+.ul {
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    float: left;
+}
+
+    .ul.triangle-gold {
+        border-left-color: gold;
+    }
+
+    .ul.triangle-darkcyan {
+        border-left-color: darkcyan;
+    }
+
+    .ul.triangle-blueviolet {
+        border-left-color: blueviolet;
+    }
+
+    .ul.triangle-cyan {
+        border-left-color: cyan;
+    }
+
+    .ul.triangle-limegreen {
+        border-left-color: limegreen;
+    }
+/* Additional task <=========================================================================== */
+.header-addtask {
+    font-family: Pacifico;
+    font-size: 1.5rem;
+}
+
+.abbr {
+    font-family: Pacifico;
+    font-size: 1rem;
+}
+
+    .abbr::selection {
+        background-color: purple;
+        color: yellow;
+    }
+
+.rubric {
+    margin-right: 30%;
+    text-align: justify;
+    transition: .5s linear;
+}
+
+    .rubric:hover {
+        background-color: lightgreen;
+    }
+
+    .rubric::selection {
+        background-color: purple;
+        color: yellow;
+    }
+
+    .rubric.indent {
+        margin-right: 30%;
+        text-indent: 3%;
+    }
+
+        .rubric.indent.amaticFont {
+            font-family: 'Amatic SC';
+            font-weight: 700;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            font-style: italic;
+        }
+
+    .rubric.amaticFont {
+        font-family: 'Amatic SC';
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .rubric.caveatFont {
+        font-family: Caveat;
+        font-size: 1.3rem;
+    }
+
+    .rubric.MarkScriptFont {
+        font-family: 'Marck Script';
+        font-size: 1.3rem;
+    }
+
+    .rubric.NeuchaFont {
+        font-family: Neucha;
+        /*font-size: 1.3rem;*/
+    }
+
+    .rubric.BadScriptFont {
+        font-family: 'Bad Script';
+        /*font-size: 1.3rem;*/
+    }
+
+    .rubric.PangolinFont {
+        font-family: Pangolin;
+        /*font-size: 1.3rem;*/
+    }
+
+.code {
+    font-family: Courier New, Courier, monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    color: green;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3%;
+}
+
+    .code::selection {
+        background-color: blue;
+        color: white;
+    }
+
+/* Task 2 <========================================================================== */
+ul {
+    border: 3px solid gold;
+    padding: 8px;
+    width: 400px;
+    margin: 0;
+}
+
+li:hover {
+    background-color: aquamarine;
+    transition: .5s linear;
+}
+
+.hotgirl01, .hotgirl02, .hotgirl03, .hotgirl04, .hotgirl05, .hotgirl06 {
+    list-style: none;
+    font-family: 'Marck Script';
+    font-size: 2.5rem;
+    background-size: 40px;
+}
+
+    .hotgirl01:before {
+        content: '';
+        display: inline-block;
+        background-image: url('Images/(1).jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        margin: 0;
+        padding: 80px 0 0 130px;
+    }
+
+    .hotgirl02:before {
+        content: '';
+        display: inline-block;
+        background-image: url('Images/(2).jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        margin: 0;
+        padding: 80px 0 0 130px;
+    }
+
+    .hotgirl03:before {
+        content: '';
+        display: inline-block;
+        background-image: url('Images/(3).jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        margin: 0;
+        padding: 80px 0 0 130px;
+    }
+
+    .hotgirl04:before {
+        content: '';
+        display: inline-block;
+        background-image: url('Images/(4).jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        margin: 0;
+        padding: 80px 0 0 130px;
+    }
+
+    .hotgirl05:before {
+        content: '';
+        display: inline-block;
+        background-image: url('Images/(5).jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        margin: 0;
+        padding: 80px 0 0 130px;
+    }
+
+    .hotgirl06:before {
+        content: '';
+        display: inline-block;
+        background-image: url('Images/(6).jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        margin: 0;
+        padding: 80px 0 0 130px;
+    }
+
+.standartdiv {
+    margin: 8px;
+    padding: 8px;
+}
+
+    .standartdiv.left {
+        float: left;
+    }
+
+    .standartdiv.withborder {
+        border: 2px solid lightblue;
+        border-radius: 5px;
+    }
+
+.hotgirl {
+    font-family: 'Marck Script';
+    font-size: 2.5rem;
+    margin-left: 170px;
+}
+
+    .hotgirl.violetta {
+        list-style-image: url('Images/(1e).jpg');
+    }
+
+    .hotgirl.angelica {
+        list-style-image: url('Images/(2e).jpg');
+    }
+
+    .hotgirl.angelina {
+        list-style-image: url('Images/(3e).jpg');
+    }
+
+    .hotgirl.anastasia {
+        list-style-image: url('Images/(4e).jpg');
+    }
+
+    .hotgirl.jasmin {
+        list-style-image: url('Images/(5e).jpg');
+    }
+
+    .hotgirl.jacqueline {
+        list-style-image: url('Images/(6e).jpg');
+    }
+
+.ul-spec {
+    width: 300px;
+    font-family: Pacifico;
+    font-size: 2rem;
+}
+
+.border-spec {
+    list-style: none;
+    padding: 16px 16px 8px 16px;
+}
+
+    .border-spec li {
+        padding: 7px 20px;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1), -2px -2px 5px 0 rgba(0,0,0,.1), 2px 2px 5px 0 rgba(0,0,0,.1), -2px 2px 5px 0 rgba(0,0,0,.1);
+        border-left: 10px solid #ab75df;
+    }
+
+        .border-spec li:hover {
+            background-color: antiquewhite;
+        }
+
+        .border-spec li:nth-child(2) {
+            border-color: aqua;
+        }
+
+        .border-spec li:nth-child(3) {
+            border-color: gold;
+        }
+
+        .border-spec li:nth-child(4) {
+            border-color: dodgerblue;
+        }
+
+        .border-spec li:nth-child(5) {
+            border-color: orangered;
+        }
+
+        .border-spec li:nth-child(6) {
+            border-color: limegreen;
+        }
+
+.two-shadow {
+    /*color: fuchsia;*/
+    width: 70%;
+    border: 2px solid fuchsia;
+    border-radius: 10px;
+    padding: 8px;
+    font-family: 'Marck Script';
+    font-size: 3rem;
+    letter-spacing: 10px;
+    text-align: justify;
+    text-shadow: 5px 5px 7px lightseagreen, -3px -3px 7px orange;
+}
+
+.payroll {
+    margin: auto;
+    width: 70%;
+    max-width: 70%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+    .payroll th {
+        background-color: lightgreen;
+        font-weight: normal;
+        border-bottom: 2px solid #6678b1;
+        padding: 8px;
+    }
+
+    .payroll td {
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 8px;
+        transition: .3s ease-in;
+    }
+
+    .payroll tr:nth-child(2n+1) td {
+        background-color: rgba(255, 255, 0, 0.30);
+    }
+
+    .payroll tr:hover td {
+        background-color: rgba(255, 0, 255, 0.30);
+    }
+
+.checkers {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    width: 70%;
+    background-color: hsl(120,100%,90%);
+    padding-bottom: 0.5%;
+    font-family: 'Bad Script';
+    letter-spacing: 3px;
+}
+
+    .checkers input[type=checkbox] {
+        display: none;
+        transition: .3s;
+    }
+
+        .checkers input[type=checkbox] + label {
+            white-space: nowrap;
+            border-radius: 9999px;
+            padding: 8px 16px;
+            background: linear-gradient(to top, hsl(30,100%,90%), white);
+            margin-top: 0.5%;
+            margin-left: 0.5%;
+            outline: none;
+            color: white;
+            text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray, 2px 2px 2px blue;
+            box-shadow: 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+        }
+
+            .checkers input[type=checkbox] + label:hover {
+                background: linear-gradient(to top, hsl(30,100%,75%), white);
+            }
+
+        .checkers input[type=checkbox]:checked + label {
+            color: hsl(0,100%,75%);
+            font-weight: bold;
+            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+            box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+        }
+
+            .checkers input[type=checkbox]:checked + label:hover {
+                background: linear-gradient(to top, hsl(30,100%,75%), white);
+            }

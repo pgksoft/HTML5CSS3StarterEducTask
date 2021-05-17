@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lesson01 - Task03</title>
+    <link href="StyleGeneral.css" rel="stylesheet" />
+</head>
+<body>
+    <h2 title="Логическое форматирование текста – форматирование текста предназначенное для удобства работы с ним поисковых систем и прочих программ, например, различных читалок.">
+        Создайте страницу, на которой будут размещены теги логической разметки. Запустите этот и предыдущий примеры в разных браузерах.
+    </h2>
+    <div>
+        <p>
+            <strong title="<strong> - задает тексту жирное начертание">
+                Теги логической разметки
+            </strong>
+        </p>
+        <p>
+            Введение в <abbr title="<abbr> - указывает, что текст внутри элемента является аббревиатурой. В атрибуте title указываютполноезначение аббревиатуры">HTML5</abbr>
+        </p>
+        <p>
+            <cite title="<cite> - текст является сноской или цитатой">http://htmlbook.ru/html/attr/common</cite>
+        </p>
+        <p>
+            <pre title="Многострочный код программы следует выводить через <pre>">
+                private int GetIdContentProperties(int idUrl) {
+                  return (
+                          from contProp in Settings.Instance.ContentDB.Database.SqlQuery&ltContentProperty&gt("SELECT * FROM ContentProperties WHERE Content=" + idUrl)
+                          select contProp.Id
+                         ).FirstOrDefault();
+                }
+            </pre>
+        </p>
+        <p>
+            <code title="<code> - предназначен для выделения текста, который представляет собой программный код">
+                throw new ArgumentNullException("SearchPatternVideoFile");
+            </code>
+        </p>
+        <p>
+            <em title="<em> - задает тексту курсивное начертание">
+                On the top of my head, I have hair.
+            </em>
+        </p>
+        <p>
+            <del title="<del> - используется для выделения текста, который был удаленв новой версии документа">
+                Абракадабра
+            </del>
+        </p>
+        <p>
+            <ins title="<ins> - предназначен для выделения текста, который был добавлен в новую версию документа">
+                Исправленная версия
+            </ins>
+        </p>
+        <p>
+            <mark title="помечает текст как выделенный">
+                Выделенный текст
+            </mark>
+        </p>
+        <p>
+            <q title="<q> - выделяет текст в цитату">
+                Read no history: nothing but biography, for that is life without theory.
+            </q>
+        </p>
+        <p>
+            <samp title="<samp> - текст, который выводитсяв результате работыкакой-либопрограммы">
+                1 2 3 4 5 6 7 8 9
+            </samp>
+        </p>
+        <p>
+            <var title="используется для выделения переменных компьютерных программ">
+                int _colors = 16
+            </var>
+        </p>
+    </div>
+</body>
+</html>

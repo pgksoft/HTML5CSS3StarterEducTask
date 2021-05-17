@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Task 3</title>
+    <!--<link href="General07.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="General07.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
+</head>
+<body class="body-index">
+    <header class="header-index task">
+        <div class="header-task-general">
+            <!--<h4 class="header-subject">HTML5 И CSS3 STARTER</h4>-->
+            <h4 class="header-subject task">HTML5 И CSS3 STARTER</h4>
+            <table>
+                <tr>
+                    <td><img src="Images/html-5-icon-64x64.png" /></td>
+                    <td><img src="Images/css-3-icon-64x64.png" /></td>
+                    <td><img src="Images/javascript-icon-64x64.png" /></td>
+                </tr>
+            </table>
+        </div>
+        <div class="header-task-content">
+            <h2 class="header-task">Lesson 7: ФОРМЫ. МЕТАТЕГИ.</h2>
+            <h3 class="header-task">Task 3</h3>
+            <p class="summary-task visible">
+                Сверстайте форму, представленную в материалах урока, используя фреймворк Bootstrap 4.
+            </p>
+        </div>
+    </header>
+    <main>
+        <section class="section-task">
+            <div class="task2-form">
+                <form action="" method="get" id="personalinfo">
+                    <fieldset>
+                        <legend>Personal information</legend>
+                        <div class="div-edit">
+                            <div class="div-label">
+                                <label class="label requered" for="first_name">First name</label>
+                            </div>
+                            <div class="div-input">
+                                <div class="div-input-setter">
+                                    <input type="text" required name="first_name" id="first_name" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-edit">
+                            <div class="div-label">
+                                <label class="label" for="middle_name">Middle name</label>
+                            </div>
+                            <div class="div-input">
+                                <div class="div-input-setter">
+                                    <input type="text" name="middle_name" id="middle_name" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-edit">
+                            <div class="div-label">
+                                <label class="label requered" for="last_name">Last name</label>
+                            </div>
+                            <div class="div-input">
+                                <div class="div-input-setter">
+                                    <input type="text" required name="last_name" id="last_name" />
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Adress</legend>
+                        <div class="div-edit">
+                            <div class="div-label">
+                                <label class="label" for="adress">Adress</label>
+                            </div>
+                            <div class="div-input">
+                                <div class="div-input-setter">
+                                    <input type="text" name="adress" id="adress" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-edit">
+                            <div class="div-label">
+                                <label class="label" for="city">City or Town</label>
+                            </div>
+                            <div class="div-input">
+                                <div class="div-input-setter">
+                                    <input type="text" name="city" id="city" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-edit">
+                            <div class="div-label">
+                                <label class="label" for="state">State</label>
+                            </div>
+                            <div class="div-input">
+                                <div class="div-input-setter">
+                                    <select type="text" name="state" id="state" list="liststate">
+                                        <option selected disabled>Choose a State...</option>
+                                        <option>Киев</option>
+                                        <option>Харьков</option>
+                                        <option>Одесса</option>
+                                        <option>Донецк</option>
+                                        <option>Запорожье</option>
+                                        <option>Львов</option>
+                                        <option>Тернополь</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-edit">
+                            <div class="div-label">
+                                <label class="label requered" for="zip-code">Zip code</label>
+                            </div>
+                            <div class="div-input">
+                                <div class="div-input-setter">
+                                    <input type="text" required name="zip-code" id="zip-code" />
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!--<input type="submit" value="Accept"/>-->
+                </form>
+            </div>
+
+        </section>
+        <aside class="aside-index">
+            <h3 class="aside-h">Рекомендуемые ресурсы</h3>
+            <p>
+                <a href="https://www.w3.org/">Официальный сайт W3C</a>
+            </p>
+            <p>
+                <a href="http://htmlbook.ru/html">Справочник по HTML</a>
+            </p>
+            <p>
+                <a href="http://htmlbook.ru/css">Справочник по CSS</a>
+            </p>
+            <p>
+                <a href="http://htmlbook.ru/samhtml">Самоучитель по HTML</a>
+            </p>
+            <p>
+                <a href="http://htmlbook.ru/samcss">Самоучитель по CSS</a>
+            </p>
+        </aside>
+
+    </main>
+    <footer class="footer-index">
+        <p>
+        </p>
+    </footer>
+</body>
+</html>

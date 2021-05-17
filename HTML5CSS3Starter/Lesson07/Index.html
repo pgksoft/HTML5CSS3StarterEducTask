@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lesson 7</title>
+    <link href="General07.css" rel="stylesheet" />
+    <!--<base target="_blank" />-->
+</head>
+<body class="body-index" onload="loadPage()">
+    <header class="header-index">
+        <div class="header-content">
+            <h1 class="header-lesson">Lesson 7</h1>
+            <h2 class="header-theme">ФОРМЫ. МЕТАТЕГИ.</h2>
+            <h4 class="header-subject subject-relative">HTML5 И CSS3 STARTER</h4>
+        </div>
+        <div class="header-img">
+            <div class="header-div-img">
+                <img class="header-img" src="Images/html-5-icon-64x64.png" />
+            </div>
+            <div class="header-div-img">
+                <img class="header-img" src="Images/css-3-icon-64x64.png" />
+            </div>
+        </div>
+    </header>
+    <nav class="nav-index">
+        <h3 class="aside-h">Панель навигациии</h3>
+        <form method="post" action="Index.html" id="listTasks" name="listTasks">
+            <p>
+                <input type="radio" id="addtask" name="tasks"
+                       value="Создайте форму с двумя полями, в которые можно будет ввести логин и пароль пользователя и нажав на кнопку отправить данные на сервер." />
+                <label for="addtask">Additional task</label>
+            </p>
+            <p>
+                <input type="radio" id="task2" name="tasks"
+                       value="Сверстайте форму, представленную в материалах урока." />
+                <label for="task2">Task 2</label>
+            </p>
+            <p>
+                <input type="radio" id="task3" name="tasks"
+                       value="Сверстайте форму, представленную в материалах урока, используя фреймворк Bootstrap 4. " />
+                <label for="task3">Task 3</label>
+            </p>
+        </form>
+    </nav>
+    <main>
+        <section class="section-index">
+            <p id="summaryTask" class="summary-task">
+                Целью данного урока является знакомство слушателя с формами и их назначением.
+                Рассмотрение элементов форм. Практическое создание формы с использованием фреймворка Bootstrap4.
+                И знакомство с метатегами.<br />
+                Выберите соостветствующий пункт на панели навигации для ознакомления с кратким содержанием задачи урока и
+                перехода на страницу реализации задачи.
+            </p>
+            <img class="task-description-img" src="Images/form1.jpg" id="taskDescriptionImg02" />
+            <img class="task-description-img" src="Images/form2.png" id="taskDescriptionImg03" />
+            <p>
+                <a href="#" id="linktaskpage">Посмотреть решение задачи</a>
+            </p>
+        </section>
+        <aside class="aside-index">
+            <h3 class="aside-h">Рекомендуемые ресурсы</h3>
+            <p>
+                <a href="https://www.w3.org/">Официальный сайт W3C</a>
+            </p>
+            <p>
+                <a href="http://htmlbook.ru/html">Справочник по HTML</a>
+            </p>
+            <p>
+                <a href="http://htmlbook.ru/css">Справочник по CSS</a>
+            </p>
+            <p>
+                <a href="http://htmlbook.ru/samhtml">Самоучитель по HTML</a>
+            </p>
+            <p>
+                <a href="http://htmlbook.ru/samcss">Самоучитель по CSS</a>
+            </p>
+            <p>
+                <a href="https://html5test.com/">How well does your browser support HTML5?</a>
+            </p>
+            <p>
+                <a href="https://caniuse.com/">Can I use?</a>
+            </p>
+        </aside>
+    </main>
+    <footer class="footer-index">
+        <p>
+            На данном уроке мы ознакомились с возможностью создания форм, узнали, что веб форма, это аналог анкеты или формы,
+            только в электронном виде. Узнали какие типы элементов форм бывают, для чего какие типы используются.
+            Поговорили о метатегах, узнали, что это такое и для чего нужно.
+        </p>
+    </footer>
+</body>
+</html>
+
+<script>
+    var summaryTask = document.getElementById('summaryTask');
+    var tasks = document.listTasks.tasks;
+    var prev = null;
+    var linkTaskPage = document.getElementById('linktaskpage');
+    var taskDescriptionImg02 = document.getElementById('taskDescriptionImg02');
+    var taskDescriptionImg03 = document.getElementById('taskDescriptionImg03');
+    function loadPage() {
+        summaryTask.style.visibility = "hidden";
+        linkTaskPage.style.visibility = "hidden";
+        for (var i = 0; i < tasks.length; i++) {
+            if (tasks[i].checked) {
+                SetDescriptionTaskPage(tasks[i]);
+            }
+        }
+        summaryTask.style.visibility = "visible";
+    }
+    for (var i = 0; i < tasks.length; i++) {
+        tasks[i].onclick = function () {
+            console.log(this.value);
+            if (this !== prev) {
+                prev = this;
+                SetDescriptionTaskPage(prev);
+            }
+        };
+    }
+    function SetDescriptionTaskPage(prev) {
+        taskDescriptionImg02.style.display = "none";
+        taskDescriptionImg03.style.display = "none";
+        summaryTask.textContent = prev.value;
+        linkTaskPage.style.visibility = "visible";
+        switch (prev.id) {
+            case "addtask": {
+                linkTaskPage.href = "AdditionalTask.html";
+                taskDescriptionImg03.style.display = "block";
+                break;
+            };
+            case "task2": {
+                linkTaskPage.href = "Task02.html";
+                taskDescriptionImg02.style.display = "block";
+                break;
+            };
+            case "task3": {
+                linkTaskPage.href = "Task03.html";
+                taskDescriptionImg02.style.display = "block";
+                break;
+            };
+            default: {
+                linkTaskPage.href = "#";
+            }
+        }
+
+    }
+</script>

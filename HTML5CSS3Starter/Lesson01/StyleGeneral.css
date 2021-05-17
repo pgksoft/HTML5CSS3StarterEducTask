@@ -1,0 +1,43 @@
+﻿body {
+    color: gray
+}
+
+p {
+    color: blue;
+}
+
+a {
+    color: darkblue;
+}
+
+div {
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: WindowText
+}
+
+    div > p {
+        margin: 0;
+        color: darkblue;
+    }
+
+pre {
+    margin: 0;
+    color: darkblue;
+}
+
+b + i {
+    color: brown;
+}
+
+sub, sup {
+    color: purple;
+    font-weight: bold;
+}
+
+progress {
+    display: block;
+    background-color: yellow;
+    color: red;
+}

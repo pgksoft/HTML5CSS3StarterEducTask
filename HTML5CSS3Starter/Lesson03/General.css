@@ -1,0 +1,135 @@
+﻿body {
+    color: dimgray;
+}
+
+.header-h2 {
+    margin: 0;
+}
+
+div > p {
+    margin: 0;
+    color: darkblue;
+    margin-left: 1%;
+}
+
+p > a {
+    color: forestgreen;
+    font-weight: 700;
+}
+
+.task-description {
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 50%;
+    font-style: italic;
+}
+
+/* for additional task */
+.p-additionalTask {
+    background-color: darkcyan;
+    color: white;
+    border: 2px double gold;
+    width: 30%;
+    margin: 2px;
+}
+
+.span-header {
+    font-weight: 900;
+    color: yellow;
+}
+
+.span-default {
+    font-style: italic;
+}
+
+/* for task 2: Article */
+.div-article {
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: WindowText;
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: 700;
+}
+.italic-bold {
+    font-style: italic;
+    font-weight: 700;
+}
+/* for task 3: Paragraphs have different borders.*/
+.p-border-solid {
+    border-style: solid;
+    border-left-color: blueviolet;
+    border-top-color: green;
+    border-right-color: fuchsia;
+    border-bottom-color: aqua;
+    border-width: 20px;
+}
+
+.p-border-dashed {
+    border-style: dashed;
+    border-color: blueviolet;
+}
+
+.p-border-dotted {
+    border-style: dotted;
+    border-color: crimson;
+}
+
+.p-border-double {
+    border-style: double;
+    border-color: forestgreen;
+    border-width: 5px;
+}
+
+.p-border-groove {
+    border-style: groove;
+    border-color: aqua;
+    border-width: 16px;
+}
+
+.p-border-ridge {
+    border-style: ridge;
+    border-color: magenta;
+    border-width: 16px;
+}
+
+.p-border-inset {
+    border-style: inset;
+    border-color: yellowgreen;
+    border-width: 16px;
+}
+
+.p-border-outset {
+    border-style: outset;
+    border-color: salmon;
+    border-width: 16px;
+}
+
+/* for task 4: Paragraphs have different background */
+.p-background-nameColor {
+    background-color: aqua;
+}
+
+.p-background-codeColor {
+    background-color: #00ddff
+}
+
+.p-background-img {
+    height: 300px;
+    background-image: url('Img/(1).jpg');
+    background-size: contain;
+    background-repeat: space;
+}
+
+.p-background-rgb {
+    background-color: rgb(13, 195, 41);
+}
+
+.p-background-rhsa {
+    background-color: hsla(200, 50%, 31%, 0.53);
+}
+

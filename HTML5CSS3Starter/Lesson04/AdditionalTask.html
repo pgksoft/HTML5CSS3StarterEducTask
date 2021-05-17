@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="General.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <h2 class="header-h2">
+            Additional task
+        </h2>
+        <p class="task-description">
+            Создайте на странице несколько параграфов и оформите их разным размером и стилем шрифта.
+        </p>
+        <hr />
+    </div>
+    <h3 class="header-addtask">Атрибуты тега &lt;Body&gt;</h3>
+    <p class="rubric indent amaticFont">
+        В противоположность тегу <span class="abbr">&lt;HEAD&gt; тег &lt;BODY&gt;</span> содержит всю ту информацию, из которой собственно и 
+        состоит рассматриваемый документ. Порядок следования тегов здесь именно такой, в каком они предстают перед читателем.
+        Начальный тег <span class="abbr">&lt;BODY&gt;</span> может иметь несколько атрибутов, например:
+        <div class="code">
+            &lt;body bgcolor=#ffffff leftmargin=0 topmargin=4 marginwidth=0 marginheight=4 link=#000099 vlink=#000099 alink=#cc0000&gt;
+        </div>
+    </p>
+    <p>
+        <div class="ul triangle-gold"></div>
+        <div class="rubric caveatFont">
+            Атрибут <span class="abbr">BACKGROUND</span> задает графическое изображение, которое как кафельная плитка заполнит фон документа.
+            Файл с изображением должен быть сохранен в формате GIF или JPEG. Пример:
+            <div class="code">
+                &lt;body background=&rdquo;(url)(путь) имя файла&rdquo;&gt;
+            </div>
+            Файл с изображением фона лучше размещать в том же каталоге, что и файл самого документа, тогда URL-адрес и путь указывать не нужно.
+            Пример использования этого атрибута в HTML-документе имеется в уроке 4.
+        </div>
+    </p>
+    <p>
+        <div class="ul triangle-darkcyan"></div>
+        <div class="rubric MarkScriptFont">
+            Атрибут <span class="abbr">BGCOLOR</span> задает цвет фона документа при помощи шестнадцатеричных значений интенсивности цветовой модели RGB
+            (Red, Green, Blue — красный, зеленый, синий) или строчного литерала, соответствующего названию цвета, например:
+            <div class="code">
+                &lt;body bgcolor=&rdquo;#ff0000&rdquo;&gt;<br />
+                &lt;body bgcolor=&rdquo;red&rdquo;&gt;
+            </div>
+            Примеры использования этого атрибута в HTML-документе имеются в уроке 2.
+        </div>
+    </p>
+    <p>
+        <div class="ul triangle-blueviolet"></div>
+        <div class="rubric NeuchaFont">
+            Атрибут <span class="abbr">TEXT</span> задает используемый по умолчанию цвет текста, не являющегося гиперссылкой. 
+            По умолчанию такой текст черный. Пример:    
+            <div class="code"> &lt;body text=”цвет”&gt; </div>
+            Пример использования этого атрибута в HTML-документе имеется в уроке 4 .
+        </div>
+    </p>
+    <p>
+        <div class="ul triangle-cyan"></div>
+        <div class="rubric BadScriptFont">
+            Атрибут <span class="abbr">LINK</span> задает цвет гиперссылки; в большинстве браузеров он по умолчанию темно-синий. Пример:
+            <div class="code">&lt;body link=”цвет”&gt;</div>
+            Пример использования этого атрибута в HTML-документе имеется в уроке 15 .
+        </div>
+    </p>
+    <p>
+        <div class="ul triangle-limegreen"></div>
+        <div class="rubric PangolinFont">
+            Атрибут <span class="abbr">ALINK</span> задает цвет активной гиперссылки, который меняется в момент щелчка на ней мышью и
+            который желательно делать отличным от цвета фона (задаваемого атрибутом LINK) . Пример:
+            <div class="code">&lt;body alink=”цвет”&gt;</div> 
+            Пример использования этого атрибута в HTML-документе имеется в уроке 15 .
+        </div>
+    </p>
+</body>
+</html>

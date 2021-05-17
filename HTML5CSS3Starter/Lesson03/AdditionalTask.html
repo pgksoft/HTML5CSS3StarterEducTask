@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="General.css" rel="stylesheet" />
+    <style>
+        .p {
+            background-color: blue;
+            color: lightgray;
+            border: 3px solid yellow;
+            width: 50%;
+        }
+
+        .span {
+            font-style: italic;
+        }
+
+        .p-span {
+            font-weight: 700;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2 class="header-h2">
+            Additional task
+        </h2>
+        <p class="task-description">
+            Создайте HTML страницу, на которой, разместите 3 параграфа.
+            Первому параграфу задайте inline стили, цвет и рамку,
+            второму параграфу задайте такие же стили с помощью глобальных стилей, и
+            третьему задайте стили во внешнем файле.
+        </p>
+        <hr />
+    </div>
+    <p style="background-color:aquamarine; color:darkblue; border:1px solid red; width:70%;" title="Параграф с инлайн стилем">
+        <span style="font-weight:700; color:darkred;">Первый</span> <span style="font-style:italic;">параграф</span>
+    </p>
+    <p class="p" title="Параграф с глобальными стилями">
+        <span class="p-span">Второй</span> 
+        <span class="span">
+            параграф.
+            Font – это универсальное свойство, которое позволяет устанавливать одновременно несколько характеристик шрифта.
+        </span>
+    </p>
+    <p class="p-additionalTask" title="Параграф с внешним стилем">
+        <span class="span-header">Третий</span> <span class="span-default">параграф.</span>
+    </p>
+</body>
+</html>

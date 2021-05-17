@@ -1,0 +1,166 @@
+﻿body {
+}
+
+.header-h2 {
+    margin: 0;
+}
+
+div > p {
+    margin: 0;
+    color: darkblue;
+    margin-left: 1%;
+}
+
+p > a {
+    font-weight: 700;
+    /*text-decoration: none;*/
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: forestgreen;
+}
+
+a:hover {
+    color: lightseagreen;
+}
+
+a:active {
+    color: lawngreen;
+}
+
+.task-description {
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 50%;
+    font-style: italic;
+}
+
+.img-template {
+    height: 300px;
+    width: auto;
+}
+
+.task-description + .img-template {
+    margin-left: 2%;
+}
+
+/* Additional task <============================================== */
+.p-horizontal {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    background-color: green;
+    text-align: center;
+    color: white;
+    border-right: 1px solid rgba(255, 255, 0, 0.30);
+}
+
+    .p-horizontal:nth-last-of-type(1) {
+        border-right: none;
+    }
+
+/* Task 2 <====================================================================*/
+#main {
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0, 255, 144, 0.30);
+}
+
+#navigation {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(178, 0, 255, 0.30)
+}
+
+.mainbody {
+    width: 100%;
+    height: 800px;
+}
+
+.mainmenu {
+    width: 20%;
+    height: 100%;
+    background-color: rgba(255, 255, 0, 0.50);
+    float: left;
+}
+
+.maincontent {
+    width: 80%;
+    height: 100%;
+    float: left;
+    background-color: azure;
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.50)
+}
+
+/* Task 3 <====================================================================*/
+#substrate {
+    width: 100%;
+    height: 700px;
+    overflow: auto;
+}
+
+.three {
+    width: 32.7%;
+    height: 100%;
+    float: left;
+    margin: 0;
+    
+}
+    .three.marginright {
+        margin-right: 0.7%;
+    }
+
+.three-header {
+    width: 100%;
+    height: 20%;
+    margin: 0;
+    margin-bottom: 0.7%;
+    border: 2px solid blue;
+    text-align: center;
+    color: white;
+}
+
+#header1 {
+    background-color: rosybrown;
+}
+
+#header2 {
+    background-color: darkseagreen;
+}
+
+#header3 {
+    background-color: skyblue;
+}
+
+.three-content {
+    width: 100%;
+    height: 78%;
+    border: 2px solid blue;
+    margin: 0;
+}
+
+#col1 {
+    background-color: sandybrown;
+}
+
+#col2 {
+    background-color: lightgreen;
+}
+
+#col3 {
+    background-color: lightblue;
+}
